@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EventsTableViewCell" customModule="Events" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-FC-1bx">
+                    <rect key="frame" x="20" y="8" width="560" height="284"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ud0-r8-MHN" userLabel="EventImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="560" height="170"/>
+                            <animations/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="EventStatusLabel" text="Status" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hru-a2-HeZ" userLabel="EventStatusLabel">
+                            <rect key="frame" x="8" y="8" width="55" height="17"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="fHt-25-Weo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dates" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOr-TO-pQk" userLabel="DateRangeLabel">
+                            <rect key="frame" x="514" y="140" width="38" height="17"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event name" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2h-UE-l1n" userLabel="EventNameLabel">
+                            <rect key="frame" x="8" y="178" width="544" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-Rt-CMK" userLabel="EventLocationLabel">
+                            <rect key="frame" x="8" y="207" width="532" height="17"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uv5-Oz-D8w" userLabel="BuyTicketsButton">
+                            <rect key="frame" x="464" y="250" width="88" height="26"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                            <state key="normal" title="Buy Tickets">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Nlo-tR-ols">
+                            <rect key="frame" x="270" y="75" width="20" height="20"/>
+                            <animations/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zOr-TO-pQk" secondAttribute="trailing" constant="8" id="835-Kf-9rv"/>
+                        <constraint firstItem="Ud0-r8-MHN" firstAttribute="top" secondItem="fGE-FC-1bx" secondAttribute="top" id="DpL-KA-I4M"/>
+                        <constraint firstItem="VKc-Rt-CMK" firstAttribute="top" secondItem="r2h-UE-l1n" secondAttribute="bottom" constant="8" id="ENX-hR-mOi"/>
+                        <constraint firstItem="Ud0-r8-MHN" firstAttribute="height" secondItem="fGE-FC-1bx" secondAttribute="height" multiplier="0.6" id="Hln-e7-dPe"/>
+                        <constraint firstItem="Ud0-r8-MHN" firstAttribute="leading" secondItem="fGE-FC-1bx" secondAttribute="leading" id="She-Hh-qgK"/>
+                        <constraint firstItem="r2h-UE-l1n" firstAttribute="leading" secondItem="Hru-a2-HeZ" secondAttribute="leading" id="VQV-vV-w6u"/>
+                        <constraint firstItem="Nlo-tR-ols" firstAttribute="centerY" secondItem="Ud0-r8-MHN" secondAttribute="centerY" id="Vqo-qB-6of"/>
+                        <constraint firstItem="VKc-Rt-CMK" firstAttribute="leading" secondItem="r2h-UE-l1n" secondAttribute="leading" id="XQv-hc-Sk6"/>
+                        <constraint firstItem="uv5-Oz-D8w" firstAttribute="trailing" secondItem="zOr-TO-pQk" secondAttribute="trailing" id="XiD-uh-FY8"/>
+                        <constraint firstItem="Hru-a2-HeZ" firstAttribute="leading" secondItem="fGE-FC-1bx" secondAttribute="leading" constant="8" id="XwP-yq-pwy"/>
+                        <constraint firstAttribute="trailing" secondItem="VKc-Rt-CMK" secondAttribute="trailing" constant="20" id="Yk9-qJ-ASf"/>
+                        <constraint firstItem="r2h-UE-l1n" firstAttribute="top" secondItem="zOr-TO-pQk" secondAttribute="bottom" constant="21" id="cJ1-Wg-Pxy"/>
+                        <constraint firstItem="Hru-a2-HeZ" firstAttribute="top" secondItem="fGE-FC-1bx" secondAttribute="top" constant="8" id="jyd-Dw-fD4"/>
+                        <constraint firstAttribute="bottom" secondItem="uv5-Oz-D8w" secondAttribute="bottom" constant="8" id="lYu-4J-wOp"/>
+                        <constraint firstAttribute="trailing" secondItem="r2h-UE-l1n" secondAttribute="trailing" constant="8" id="szj-4P-SPA"/>
+                        <constraint firstAttribute="trailing" secondItem="Ud0-r8-MHN" secondAttribute="trailing" id="uh9-aA-xA4"/>
+                        <constraint firstItem="r2h-UE-l1n" firstAttribute="top" secondItem="Ud0-r8-MHN" secondAttribute="bottom" constant="8" id="vV9-8H-dW6"/>
+                        <constraint firstItem="Nlo-tR-ols" firstAttribute="centerX" secondItem="Ud0-r8-MHN" secondAttribute="centerX" id="vfH-DF-DGt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fGE-FC-1bx" secondAttribute="bottom" constant="8" id="4wh-Gn-NYP"/>
+                <constraint firstItem="fGE-FC-1bx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="DUf-dV-wa0"/>
+                <constraint firstAttribute="trailing" secondItem="fGE-FC-1bx" secondAttribute="trailing" constant="20" id="UsR-tT-isL"/>
+                <constraint firstItem="fGE-FC-1bx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="kVi-1s-Ryb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="eventDateRangeLabel" destination="zOr-TO-pQk" id="1H1-UI-Uxq"/>
+                <outlet property="eventImageView" destination="Ud0-r8-MHN" id="BfN-UJ-8hf"/>
+                <outlet property="eventLocationLabel" destination="VKc-Rt-CMK" id="2gD-4Z-ySr"/>
+                <outlet property="eventNameLabel" destination="r2h-UE-l1n" id="gke-NO-kxh"/>
+                <outlet property="eventStatusLabel" destination="Hru-a2-HeZ" id="TWr-LG-MhQ"/>
+                <outlet property="eventTicketsButton" destination="uv5-Oz-D8w" id="lJH-L6-bR2"/>
+                <outlet property="imageLoadingIndicator" destination="Nlo-tR-ols" id="pey-eV-qbH"/>
+            </connections>
+            <point key="canvasLocation" x="155" y="280"/>
+        </view>
+    </objects>
+</document>
